@@ -16,6 +16,11 @@
 		D93A9D101CD48FA100839320 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93A9D0E1CD48FA100839320 /* LaunchScreen.storyboard */; };
 		D93A9D1B1CD48FA200839320 /* UnitTestsCardExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D93A9D1A1CD48FA200839320 /* UnitTestsCardExampleTests.m */; };
 		D93A9D261CD48FA200839320 /* UnitTestsCardExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D93A9D251CD48FA200839320 /* UnitTestsCardExampleUITests.m */; };
+		D93A9D361CD48FE300839320 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = D93A9D351CD48FE300839320 /* Card.m */; };
+		D93A9D391CD4933400839320 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = D93A9D381CD4933400839320 /* PlayingCard.m */; };
+		D93A9D3C1CD4936B00839320 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = D93A9D3B1CD4936B00839320 /* Deck.m */; };
+		D93A9D3F1CD493B900839320 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = D93A9D3E1CD493B900839320 /* PlayingCardDeck.m */; };
+		D93A9D411CD494DD00839320 /* CardTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = D93A9D401CD494DD00839320 /* CardTestCase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,15 @@
 		D93A9D211CD48FA200839320 /* UnitTestsCardExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestsCardExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93A9D251CD48FA200839320 /* UnitTestsCardExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTestsCardExampleUITests.m; sourceTree = "<group>"; };
 		D93A9D271CD48FA200839320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D93A9D341CD48FE300839320 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		D93A9D351CD48FE300839320 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		D93A9D371CD4933400839320 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		D93A9D381CD4933400839320 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		D93A9D3A1CD4936B00839320 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		D93A9D3B1CD4936B00839320 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		D93A9D3D1CD493B900839320 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		D93A9D3E1CD493B900839320 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
+		D93A9D401CD494DD00839320 /* CardTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardTestCase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +117,7 @@
 		D93A9CFC1CD48FA100839320 /* UnitTestsCardExample */ = {
 			isa = PBXGroup;
 			children = (
+				D93A9D331CD48FB300839320 /* Models */,
 				D93A9D001CD48FA100839320 /* AppDelegate.h */,
 				D93A9D011CD48FA100839320 /* AppDelegate.m */,
 				D93A9D031CD48FA100839320 /* ViewController.h */,
@@ -130,6 +145,7 @@
 			children = (
 				D93A9D1A1CD48FA200839320 /* UnitTestsCardExampleTests.m */,
 				D93A9D1C1CD48FA200839320 /* Info.plist */,
+				D93A9D401CD494DD00839320 /* CardTestCase.m */,
 			);
 			path = UnitTestsCardExampleTests;
 			sourceTree = "<group>";
@@ -141,6 +157,21 @@
 				D93A9D271CD48FA200839320 /* Info.plist */,
 			);
 			path = UnitTestsCardExampleUITests;
+			sourceTree = "<group>";
+		};
+		D93A9D331CD48FB300839320 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D93A9D341CD48FE300839320 /* Card.h */,
+				D93A9D351CD48FE300839320 /* Card.m */,
+				D93A9D371CD4933400839320 /* PlayingCard.h */,
+				D93A9D381CD4933400839320 /* PlayingCard.m */,
+				D93A9D3A1CD4936B00839320 /* Deck.h */,
+				D93A9D3B1CD4936B00839320 /* Deck.m */,
+				D93A9D3D1CD493B900839320 /* PlayingCardDeck.h */,
+				D93A9D3E1CD493B900839320 /* PlayingCardDeck.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +304,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D93A9D391CD4933400839320 /* PlayingCard.m in Sources */,
+				D93A9D3F1CD493B900839320 /* PlayingCardDeck.m in Sources */,
+				D93A9D3C1CD4936B00839320 /* Deck.m in Sources */,
+				D93A9D361CD48FE300839320 /* Card.m in Sources */,
 				D93A9D051CD48FA100839320 /* ViewController.m in Sources */,
 				D93A9D021CD48FA100839320 /* AppDelegate.m in Sources */,
 				D93A9D0B1CD48FA100839320 /* UnitTestsCardExample.xcdatamodeld in Sources */,
@@ -285,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D93A9D1B1CD48FA200839320 /* UnitTestsCardExampleTests.m in Sources */,
+				D93A9D411CD494DD00839320 /* CardTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
